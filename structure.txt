@@ -1,0 +1,16 @@
+your-project/
+├── data/
+│   ├── raw/
+│   │   └── COVID-19 ClinicalTrials.csv      ← original, never touch
+│   └── processed/
+│       └── clinical_trials_clean.csv        ← one cleaned flat file
+│
+├── notebooks/
+│   ├── 01_eda.ipynb                         ← saves the cleaned CSV
+│   └── 02_visualizations.ipynb
+│
+├── sql/
+│   └── ...
+│
+├── load_to_postgres.py                      ← reads CSV, splits, loads 6 tables
+└── README.md
