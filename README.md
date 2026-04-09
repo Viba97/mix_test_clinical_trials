@@ -201,7 +201,6 @@ For a daily-refresh pipeline, I would implement:
 I would deploy a **Metabase or Apache Superset** instance connected to the PostgreSQL database, with:
 - Pre-built dashboards mirroring the 5 business questions, with interactive filters (phase, status, therapeutic area, date range, country).
 - Saved SQL queries that stakeholders can fork and modify.
-- A curated semantic layer (dbt metrics or Metabase models) so non-SQL users can drag-and-drop fields without writing queries.
 - Scheduled email reports for recurring KPIs (weekly trial landscape summary).
 
 ### 4. Compliance Considerations (GxP)
@@ -215,8 +214,6 @@ In a GxP-regulated environment:
 
 Models that would add value to this use case:
 - **NLP on outcomes/eligibility text:** Extract structured features from free-text fields (outcome measures, eligibility criteria) to identify patterns associated with success/failure — currently unused data.
-- **Geographic clustering:** Identify optimal site networks using k-means or hierarchical clustering on country-level trial density, therapeutic specialization, and regulatory timeline data.
-
 ---
 
 ## AI Tools Disclosure
